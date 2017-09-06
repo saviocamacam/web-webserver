@@ -1,0 +1,722 @@
+body {
+    margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+    border: 0px;
+}
+
+::-moz-selection {
+    background-color: #883f6a;
+    color: #fff;
+}
+
+::selection {
+    background-color: #883f6a;
+    color: #fff;
+}
+
+.zora-search-box .mdl-textfield__input {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.zora-header .mdl-menu__container {
+    z-index: 50;
+    margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+    width: auto;
+}
+
+.zora-fab {
+    position: absolute;
+    right: 20%;
+    bottom: -26px;
+    z-index: 3;
+    background: #64ffda !important;
+    color: black !important;
+}
+
+.zora-mobile-title {
+    display: none !important;
+}
+
+
+.zora-logo-image {
+    height: 28px;
+    width: 140px;
+    background-size: auto 28px;
+
+}
+
+/*cor nav-bar*/
+.zora-header {
+    overflow: visible;
+    background-color: white;
+}
+
+/*icones da nav-bar*/
+.zora-header .material-icons {
+    color: #767777 !important;
+}
+
+/*Não achei*/
+.zora-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+}
+
+/*letra menus nav-bar*/
+.zora-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.zora-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zora-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 800px;
+}
+
+.zora-search-box.is-focused + .zora-navigation-container {
+    opacity: 0;
+    width: 100px;
+}
+
+
+.zora-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+}
+
+.zora-navigation .mdl-navigation__link:hover {
+    border-bottom: 4px solid #214478;
+}
+
+.zora-search-box {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.zora-more-button {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+
+.zora-drawer {
+    border-right: none;
+}
+
+.zora-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
+
+.zora-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+}
+
+.zora-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #214478;
+}
+
+.zora-drawer .mdl-layout-title {
+    position: relative;
+    background: #214478;
+    height: 160px;
+}
+
+.zora-drawer .zora-logo-image {
+    position: absolute;
+    bottom: 16px;
+}
+
+/*Imagem de entrada*/
+#zora-main-image {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    background-color: #f3f3f3;
+    background-size: cover;
+}
+
+.logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: #767777;
+    font-weight: 500;
+}
+
+.zora-slogan {
+    font-size: 60px;
+    padding-top: 160px;
+}
+
+.zora-sub-slogan {
+    font-size: 21px;
+    padding-top: 24px;
+}
+
+.zora-create-character {
+    font-size: 21px;
+    padding-top: 400px;
+}
+
+.zora-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+}
+
+.zora-screen-section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.zora-screens {
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.zora-screen {
+    text-align: center;
+}
+
+.zora-screen .zora-link {
+    margin-top: 16px;
+    display: block;
+    z-index: 2;
+}
+
+.zora-image-link {
+    text-decoration: none;
+}
+
+.zora-wear {
+    display: inline-block;
+    width: 160px;
+    margin-right: 32px;
+}
+
+.zora-wear .zora-screen-image {
+    width: 40%;
+    z-index: 1;
+}
+
+
+.zora-phone {
+    display: inline-block;
+    width: 64px;
+    margin-right: 48px;
+}
+
+.zora-phone .zora-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+
+.zora-tablet {
+    display: inline-block;
+    width: 110px;
+    margin-right: 64px;
+}
+
+.zora-tablet .zora-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.zora-tablet .zora-link {
+    display: block;
+    z-index: 2;
+}
+
+
+.zora-tv {
+    display: inline-block;
+    width: 300px;
+    margin-right: 80px;
+}
+
+.zora-tv .zora-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+
+.zora-auto {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+}
+
+.zora-auto .zora-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+}
+
+
+.zora-letreiro-section {
+    position: relative;
+    background: url('images/seinfo16.jpg') center bottom no-repeat fixed;
+    background-size: cover;
+    height: 600px;
+}
+
+.zora-letreiro-band {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #37474f;
+}
+
+.zora-letreiro-band-text {
+    max-width: 800px;
+    margin-left: 25%;
+    padding: 24px;
+    text-align: left;
+    color: white;
+}
+
+.zora-letreiro-band-text p {
+    padding-top: 8px;
+}
+
+.zora-link {
+    text-decoration: none;
+    color: #883f6a !important;
+}
+
+.zora-link:hover {
+    color: #7cb342 !important;
+}
+
+.zora-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.zora-alt-link {
+    text-decoration: none;
+    color: #214478 !important;
+    font-size: 16px;
+    float: right !important;
+}
+
+.zora-alt-link:hover {
+    color: #772d59 !important;
+}
+
+.zora-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.zora-customized-section {
+    text-align: center;
+}
+
+.zora-customized-section-text {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 16px 80px 16px;
+}
+
+.zora-customized-section-text p {
+    padding-top: 16px;
+}
+
+.zora-customized-section-image {
+    background: url('devices.jpg') center top no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.zora-more-section {
+    padding: 80px 0;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zora-realizacao-apoio {
+    padding: 80px 0 40px 0;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zora-more-section .zora-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+}
+
+.zora-card-container {
+    align-items: center !important;
+}
+
+.zora-card-container .mdl-card__media {
+    overflow-x:auto;
+    background: transparent;
+}
+
+.zora-card-container .mdl-card__media img {
+    overflow-x:auto;
+    width: 100%;
+}
+
+.zora-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+}
+
+.zora-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+}
+
+.zora-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+}
+
+.zora-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+}
+
+.zora-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+}
+
+.zora-table-cronograma{
+    overflow-x:auto;
+    width: 100%;
+    top:50%;
+    left: -15%;
+    cursor: default;
+}
+
+.cell-cronograma{text-align: center !important; border: 1px solid black !important;}
+
+.zora-footer {
+    background-color: #fafafa;
+    float: left;
+    width: 96%;
+}
+
+.zora-footer a:hover {
+    color: #214478;
+}
+
+.zora-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+}
+
+.zora-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+}
+
+.zora-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+}
+
+.zora-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+}
+
+.zora-footer .mdl-mega-footer--right-section a .material-icons {
+    float: right;
+    top: 6px;
+}
+
+
+.zora-link-menu:hover {
+    cursor: pointer;
+}
+
+.zora-list-title{
+    margin-top: 50px;
+}
+
+/* Tooltip container */
+.zora-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.zora-tooltip .zora-tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    white-space: normal;
+    padding: 10px 10px;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.zora-tooltip .zora-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.zora-tooltip:hover .zora-tooltiptext {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+    .zora-navigation-container {
+        display: none;
+    }
+
+    .zora-title {
+        display: none !important;
+    }
+
+    .zora-mobile-title {
+        display: block !important;
+        position: absolute;
+        left: calc(50% - 70px);
+        top: 12px;
+        transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+       consecutive "+" operators in some cases. Therefore, we need to use both
+       here to cover all the bases. */
+    .zora.zora-search-box.is-focused ~ .zora-mobile-title,
+    .zora-search-box.is-focused + .zora-navigation-container + .zora-mobile-title {
+        opacity: 0;
+    }
+
+    .zora-more-button {
+        display: none;
+    }
+
+    .zora-search-box.is-focused {
+        width: calc(100% - 48px);
+    }
+
+    .zora-search-box .mdl-textfield__expandable-holder {
+        width: 100%;
+    }
+
+    .zora-be-together-section {
+        height: 350px;
+    }
+
+    .zora-slogan {
+        font-size: 26px;
+        margin: 0 16px;
+        padding-top: 24px;
+    }
+
+    .zora-sub-slogan {
+        font-size: 16px;
+        margin: 0 16px;
+        padding-top: 8px;
+    }
+
+    .zora-create-character {
+        padding-top: 200px;
+        font-size: 16px;
+    }
+
+    .zora-create-character img {
+        height: 12px;
+    }
+
+    .zora-fab {
+        display: none;
+    }
+
+    .zora-wear-band-text {
+        margin-left: 0;
+        padding: 16px;
+    }
+
+    .zora-footer .mdl-mega-footer--bottom-section {
+        display: none;
+    }
+}
+
+#view-source {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+
+/*Resets*/
+.mdl-data-table tbody tr.is-selected {
+    background-color: rgb(255,255,255) !important; 
+}
+.mdl-data-table tbody tr:hover {
+    background-color: rgb(255,255,255) !important; 
+}
+.mdl-dialog-card {
+    border: none;
+    box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+    width: 600px; }
+#gambiarra-cronograma{
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    white-space:nowrap !important;
+}
+
+/*Fim Resets*/
+
+.realizacao_apoio{
+    margin-left: 100px;
+    float: left;
+}
+
+.logoUtf{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-image: url('images/logo.png');
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logoCacic{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-image: url('images/cacic.png');
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 40px;
+}
+
+.android-card-container {
+}
+
+.android-card-container .mdl-card__media {
+    overflow-x:auto;
+    background: transparent;
+}
+
+.android-card-container .mdl-card__media img {
+    overflow-x:auto;
+    width: 20%;
+}
+
+.android-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+}
+
+.android-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+}
+
+.android-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+}
+
+.android-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+}
+
+.android-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+}
+
+/*Cronograma*/
+/*Meio-periodo*/
+.cm1{background-color: #a4c2f4 !important;}
+.cm2{}
+.cm3{}
+/*Integral*/
+.ci1{background-color: #f9cb9c !important;}
+.ci2{background-color: #93c47d !important;}
+.ci3{}
+/*Especiais*/
+.ccabecario1{
+    background-color: #434343 !important;
+    color: #fff !important;
+}
+.ccabecario2{background-color: #d9ead3 !important;}
+.cintervalo{background-color: #cccccc !important;}
+.cespecial1{background-color: #ffd966 !important;}
+.cespecial2{background-color: #bf9000 !important;}
+.cespecial3{background-color: #f1c232 !important;}
+.cvago{background-color: #b6d7a8 !important;}
+.cpalestra{background-color: #3c78d8 !important;}
+/*Modals*/
+.mdl-dialog-card-image{
+    border-radius: 10%;
+    margin-bottom: 10px;
+}

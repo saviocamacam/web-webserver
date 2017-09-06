@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="IV Semana de Informática">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>SEINFO17</title>
+
+        <!-- Page styles -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">-->
+        <link rel="stylesheet" href="material.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="ajuste-cronograma">
+        <!-- Contem a Pagina inteira -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <!-- Cabecalho -->
+            <div class="zora-header mdl-layout__header mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row">
+                    <!-- Add spacer, to align navigation to the right in desktop -->
+                    <div class="zora-header-spacer mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <div class="zora-navigation-container">
+                        <nav class="zora-navigation mdl-navigation">
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="inscricao.html">Inscrições</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="chamada.html">Chamada</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Cronograma</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="minicursos.html">Minicursos</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="comissoes.html">Comissões</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="historico.html">Histórico</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="sobre.html">Sobre</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Cabecalho -->
+            <!--Menu lateral-->
+            <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+                <nav class="mdl-navigation">
+                    <span class="mdl-navigation__link">Regulamentos</span>
+                    <a class="mdl-navigation__link" href="">Aguarde liberação</a>
+                    <div class="zora-drawer-separator"></div>
+                    <span class="mdl-navigation__link">Atividades</span>
+                    <a class="mdl-navigation__link" href="">Aguarde liberação</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="inscricao.html">Inscrições</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="chamada.html">Chamada</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Cronograma</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="minicursos.html">Minicursos</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="comissoes.html">Comissões</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="historico.html">Histórico</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="sobre.html">Sobre</a>
+                </nav>
+            </div>
+            <!--Fim Menu lateral-->
+            <!-- Conteudo -->
+            <div class="zora-content mdl-layout__content">
+                <!-- Quadro 1 -->
+                <div class="zora-more-section mdl-typography--text-center">
+                    <div class="mdl-typography--display-3">Cronograma</div>
+                        As inscrições iniciaram no dia 23 de maio e vão até 25 de agosto de 2017.<br/>
+                        <p>Clique em uma das atrações para saber mais, conhecer sobre ministrantes de minicursos e palestrantes.</p><br/>
+
+                        <div class="zora-table-cronograma" id="gambiarra-cronograma">
+                            <table class="mdl-data-table mdl-card__media">
+                                <thead>
+                                    <tr>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1" colspan="2">Data-hora</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">Segunda-feira</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">Terça-feira</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">Quarta-feira</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">Quinta-feira</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">Sexta-feira</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">Período</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">Início</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">28/08/17</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">29/08/17</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">30/08/17</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">31/08/17</th>
+                                        <th class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario1">01/09/17</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Manhã -->
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma mdl-data-table__header--sorted-ascending ccabecario2" rowspan="9">Manhã</td>
+                                        <td class="cell-cronograma ccabecario2" rowspan="4">08:30</td>
+                                        <td class="cell-cronograma cvago" rowspan="4"></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Wagner Monteverde </br><b><button id="show-modal-m10" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m10')">Segurança (Sala E100)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Mairieli Wessel </br><b><button id="show-modal-m7" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m7')">Mineração de Repositórios </button></br>(SALA E100)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Henrique Pinheiro </br><b><button id="show-modal-m9" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m9')">Ruby on Rails (Sala E100)</button></b></td>
+                                        
+                                        <td class="cell-cronograma cvago" rowspan="4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Rogério Gonçalves</br><b><button id="show-modal-m2" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m2')">Cuda (Sala E007)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Douglas Nassif</br><b><button id="show-modal-m8" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m8')">Full-stack Java Script</button></br>(SALA E007)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Rodrigo Campiolo</br><b><button id="show-modal-m6" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m6')">LaTex (Sala E007)</button></b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">Radames e Frank </br><b><button id="show-modal-m1" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m1')">Arduino (Sala E104)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">Fábio Rogério SJ </br><b><button id="show-modal-m5" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m5')">Aplicativos Híbridos </button></br>(SALA E104)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">João Martins e Luiz Arthur </br><b><button id="show-modal-m11" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m11')">Introdução ao Linux </button></br>(SALA E104)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Bruno Mendes </br><b><button id="show-modal-m4" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m4')">Flask (Sala E105)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Vitório Miguel </br><b><button id="show-modal-m3" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m3')">EMACS (Sala E105)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Marcos Silvano </br><b><button id="show-modal-m12" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m12')">Jogos com JavaScript </button></br> (SALA E105)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-cronograma cintervalo">10:00</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cintervalo" colspan="5">Intervalo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-cronograma ccabecario2" rowspan="4">10:20</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial1" rowspan="4"><b><button id="show-modal-war" type="button" class="mdl-button" onclick = "parametro(this, '#modal-war')">Warm-up (Sala E100)</button></b></br>Maratona de</br>Programação</b></br></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Wagner Monteverde </br><b><button id="show-modal-m10" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m10')">Segurança (Sala E100)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Mairieli Wessel </br><b><button id="show-modal-m7" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m7')">Mineração de Repositórios </button></br>(SALA E100)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Henrique Pinheiro </br><b><button id="show-modal-m9" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m9')">Ruby on Rails (Sala E100)</button></b></td>
+
+                                        <td class="cell-cronograma cvago" rowspan="4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Rogério Gonçalves</br><b><button id="show-modal-m2" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m2')">Cuda (Sala E007)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Douglas Nassif</br><b><button id="show-modal-m8" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m8')">Full-stack Java Script</button></br>(SALA E007)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Rodrigo Campiolo</br><b><button id="show-modal-m6" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m6')">LaTex (Sala E007)</button></b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">Radames e Frank </br><b><button id="show-modal-m1" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m1')">Arduino (Sala E104)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">Fábio Rogério SJ </br><b><button id="show-modal-m5" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m5')">Aplicativos Híbridos </button></br>(SALA E104)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">João Martins e Luiz Arthur </br><b><button id="show-modal-m11" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m11')">Introdução ao Linux </button></br>(SALA E104)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Bruno Mendes </br><b><button id="show-modal-m4" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m4')">Flask (Sala E105)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Vitório Miguel </br><b><button id="show-modal-m3" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m3')">EMACS (Sala E105)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Marcos Silvano </br><b><button id="show-modal-m12" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m12')">Jogos com JavaScript </button></br> (SALA E105)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-cronograma cintervalo"></td>
+                                        <td class="cell-cronograma cintervalo">12:00</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cintervalo" colspan="5">Almoço</td>
+                                    </tr>
+                                    <!-- Tarde -->
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma mdl-data-table__header--sorted-ascending ccabecario2" rowspan="10">Tarde</td>
+                                        <td class="cell-cronograma ccabecario2" rowspan="4">14:00</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial1" rowspan="4"><b><button id="show-modal-mar" type="button" class="mdl-button" onclick = "parametro(this, '#modal-mar')">Maratona </button></br>DE PROGRAMAÇÃO </br>(SALA E100)</b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Wagner Monteverde </br><b><button id="show-modal-m10" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m10')">Segurança (Sala E100)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Mairieli Wessel </br><b><button id="show-modal-m7" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m7')">Mineração de Repositórios </button></br>(SALA E100)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Henrique Pinheiro </br><b><button id="show-modal-m9" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m9')">Ruby on Rails (Sala E100)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial1" rowspan="4"><b><button id="show-modal-co" type="button" class="mdl-button" onclick = "parametro(this, '#modal-co')">Confraternização</button></br>(GINÁSIO)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Rogério Gonçalves</br><b><button id="show-modal-m2" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m2')">Cuda (Sala E007)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Douglas Nassif</br><b><button id="show-modal-m8" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m8')">Full-stack Java Script</button></br>(SALA E007)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Rodrigo Campiolo</br><b><button id="show-modal-m6" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m6')">LaTex (Sala E007)</button></b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">Radames e Frank </br><b><button id="show-modal-m1" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m1')">Arduino (Sala E104)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">Fábio Rogério SJ </br><b><button id="show-modal-m5" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m5')">Aplicativos Híbridos </button></br>(SALA E104)</b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">João Martins e Luiz Arthur </br><b><button id="show-modal-m11" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m11')">Introdução ao Linux </button></br>(SALA E104)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Bruno Mendes </br><b><button id="show-modal-m4" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m4')">Flask (Sala E105)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Vitório Miguel </br><b><button id="show-modal-m3" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m3')">EMACS (Sala E105)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Marcos Silvano </br><b><button id="show-modal-m12" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m12')">Jogos com JavaScript </button></br> (SALA E105)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-cronograma cintervalo">15:30</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cintervalo" colspan="5">Intervalo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-cronograma ccabecario2" rowspan="5">15:50</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial1" rowspan="2"><b><button id="show-modal-mar" type="button" class="mdl-button" onclick = "parametro(this, '#modal-mar')">Maratona </button></br>DE PROGRAMAÇÃO </br>(SALA E100)</b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Wagner Monteverde </br><b><button id="show-modal-m10" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m10')">Segurança (Sala E100)</button></b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Mairieli Wessel </br><b><button id="show-modal-m7" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m7')">Mineração de Repositórios </button></br>(SALA E100)</b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci1">Henrique Pinheiro </br><b><button id="show-modal-m9" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m9')">Ruby on Rails (Sala E100)</button></b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial1" rowspan="5"><b><button id="show-modal-co" type="button" class="mdl-button" onclick = "parametro(this, '#modal-co')">Confraternização</button></br>(GINÁSIO)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Rogério Gonçalves</br><b><button id="show-modal-m2" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m2')">Cuda (Sala E007)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Douglas Nassif</br><b><button id="show-modal-m8" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m8')">Full-stack Java Script</button></br>(SALA E007)</b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ci2">Rodrigo Campiolo</br><b><button id="show-modal-m6" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m6')">LaTex (Sala E007)</button></b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial2" rowspan="3"><b><button id="show-modal-lig" type="button" class="mdl-button" onclick = "parametro(this, '#modal-lig')">Lightning </button></br>TALK </br>(ANFITEATRO)</b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">Radames e Frank </br><b><button id="show-modal-m1" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m1')">Arduino (Sala E104)</button></b></td>
+                                        
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">Fábio Rogério SJ </br><b><button id="show-modal-m5" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m5')">Aplicativos Híbridos </button></br>(SALA E104)</b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cm1">João Martins e Luiz Arthur </br><b><button id="show-modal-m11" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m11')">Introdução ao Linux </button></br>(SALA E104)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Bruno Mendes </br><b><button id="show-modal-m4" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m4')">Flask (Sala E105)</button></b></td>
+
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Vitório Miguel </br><b><button id="show-modal-m3" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m3')">EMACS (Sala E105)</button></b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma ccabecario2">Marcos Silvano </br><b><button id="show-modal-m12" type="button" class="mdl-button" onclick = "parametro(this, '#modal-m12')">Jogos com JavaScript </button></br> (SALA E105)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial3"><b><button id="show-modal-ses" type="button" class="mdl-button" onclick = "parametro(this, '#modal-ses')">Sessão Técnica I</button></br>(MINI-AUDITÓRIO)</b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial3"><b><button id="show-modal-ses" type="button" class="mdl-button" onclick = "parametro(this, '#modal-ses')">Sessão Técnica II</button></br>(MINI-AUDITÓRIO)</b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cespecial3"><b><button id="show-modal-ses" type="button" class="mdl-button" onclick = "parametro(this, '#modal-ses')">Sessão Técnica III</button></br>(MINI-AUDITÓRIO)</b></td>
+                                    </tr>
+                                    <!-- Noite -->
+                                    <tr>
+                                        <td class="cell-cronograma cintervalo" rowspan="2"></td>
+                                        <td class="cell-cronograma cintervalo">17:20</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cintervalo">Jantar</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cintervalo" rowspan="2" colspan="4">Jantar</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-cronograma cintervalo">19:00</td>
+                                        <td class="mdl-data-table__cell--non-numeric  cell-cronograma cpalestra" rowspan="2">Cerimonial de</br>Abertura</br></br>Anderson Araújo</br><b><button id="show-modal-p1" type="button" class="mdl-button" onclick = "parametro(this, '#modal-p1')">Inteligência Artificial</button></b></b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma mdl-data-table__header--sorted-ascending ccabecario2" rowspan="3">Noite</td>
+                                        <td class="cell-cronograma ccabecario2">19:30</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cpalestra">Fábio Rogério SJ</br><b><button id="show-modal-p2" type="button" class="mdl-button" onclick = "parametro(this, '#modal-p2')">Programação Mobile</button></b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cpalestra">Raphael Batista Saldanha</br><b><button id="show-modal-p9" type="button" class="mdl-button" onclick = "parametro(this, '#modal-p9')">Home Office</button></b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cpalestra">André de Moares</br><b><button id="show-modal-p3" type="button" class="mdl-button" onclick = "parametro(this, '#modal-p3')">Desenvolvimento Android</button></b></td>
+                                        
+                                        <td class="cell-cronograma  cvago"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-cronograma  cintervalo">20:30</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cintervalo" colspan="5">Intervalo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-cronograma  ccabecario2">20:50</td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cpalestra"><b><button id="show-modal-coq" type="button" class="mdl-button" onclick = "parametro(this, '#modal-coq')">Coquetel </button></b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cpalestra">Eder Gonçalves Pereira</br><b><button id="show-modal-p10" type="button" class="mdl-button" onclick = "parametro(this, '#modal-p10')">Empreendedorismo: BLZ</button></b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cpalestra"> Marcelo de Souza</br><b><button id="show-modal-p8" type="button" class="mdl-button" onclick = "parametro(this, '#modal-p8')">S.O.L.I.D</button></b></td>
+                                        <td class="mdl-data-table__cell--non-numeric cell-cronograma cpalestra">Diego Kiyoshi Maeoka</br><b><button id="show-modal-p7" type="button" class="mdl-button" onclick = "parametro(this, '#modal-p7')">Cibersegurança</button></b></td>
+                                        <td class="cell-cronograma cvago"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+                <!-- Fim Quadro 1 -->
+                <!-- Modals -->
+                <!-- Palestra 1 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-p1">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/palestras/anderson_araujo.jpg" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">Inteligência Artificial</div>
+                      <span class="mdl-typography--body-1">Aplicação de técnicas de aprendizado por reforço em jogos digitais</span></div><br/>
+                    <div><span class="mdl-typography--title">Anderson Araújo</span><br/>
+                      <span class="mdl-typography--caption">Possui graduação em Ciência da Computação pela UFMS (2004), obteve o título de mestre UFPR (2006) e possui o título de doutor pelo ITA (2014). Trabalhou ativamente como pesquisador nos grupos de pesquisa: IMAGO (UFPR) e AIRGroup (ITA). Foi professor na Fatec (São José dos Campos-SP) e atualmente é professor adjunto na UFMS. Atua principalmente nos seguintes temas: Aprendizado de Máquina, Visão Computacional, Agentes Inteligentes e Aprendizado por Reforço.</span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Palestra 1 -->
+
+                <!-- Palestra 2 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-p2">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/palestras/fabio.png" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">Desenvolvimento de Aplicativos Móveis Híbridos Multiplataformas e o Futuro dos Apps.</div>
+                      <span class="mdl-typography--body-1">O desenvolvimento de aplicativos móveis não é novidade e está bem difundido no contexto da tecnologia da informação, o desafio do momento é como desenvolver aplicativos móveis para diferentes plataformas de forma rápida e eficiente. Nesta palestra será apresentado como, e porque, podemos criar aplicativos utilizando tecnologia web que rode em diferentes sistemas operacionais e qual o futuro dos apps.</span></div><br/>
+                    <div><span class="mdl-typography--title">Fábio Rogério SJ</span><br/>
+                      <span class="mdl-typography--caption">Fábio Rogério da Silva José, conhecido como Fábio Rogério SJ nas redes sociais, é desenvolvedor de aplicações web e mobile desde quando o Internet Explorer 7 era um pesadelo e desenvolver aplicativos híbridos com tecnologias web era um trabalho árduo, ou seja, desde 2007. Atualmente Fábio Rogério trabalha como desenvolvedor e pesquisador na empresa TecnoSpeed e presta serviço de consultoria e treinamento em desenvolvimento de aplicações web e mobile utilizando tecnologias híbridas. Fábio também é professor, de curso superior, onde ministra as disciplinas de desenvolvimento frontend, desenvolvimento de aplicativos móveis, web design, design de interação e lógica de programação.</span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Palestra 2 -->
+
+                <!-- Palestra 3 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-p3">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/palestras/andre.jpg" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">Desenvolvimento Android</div>
+                      <span class="mdl-typography--body-1">Bibliotecas e padrões utilizados no mercado<br>Você já ouviu falar de Firebase, Retrofit, MVP, MVVM, Kotlin? Vamos conversar um pouco sobre o desenvolvimento Android e alguns desses recursos utilizados no mercado de trabalho.</span></div><br/>
+                    <div><span class="mdl-typography--title">André de Moraes</span><br/>
+                      <span class="mdl-typography--caption">Graduado em Informática pela UEM, possui doze anos de experiência em desenvolvimento de software. Está no mundo Mobile desde 2009, e é atualmente responsável por diversos projetos Android na DB1 Global Software.</span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Palestra 3 -->
+
+                <!-- Palestra 7 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-p7">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/palestras/diego.jpg" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">Cibersegurança</div>
+                      <span class="mdl-typography--body-1">Em épocas de ataques de larga escala como o recente Wannacry algumas perguntas começam a surgir. Como funciona a exploração de vulnerabilidades em sistemas? O que são os exploits, quem os escreve, com que propósito, e as principais perguntas… Onde conseguir e como usar para esse conhecimento para proteger nossos sistemas?</span></div><br/>
+                    <div><span class="mdl-typography--title">Diego Kiyoshi Maeoka </span><br/>
+                      <span class="mdl-typography--caption">Professor do Senai Londrina formado em Engenharia da Computação Unopar, Linux Professional Institute Ceritifed, Microsoft Certified Professional e Trendmicro Certified Security Master. Atuante na área de segurança da informação, tendo participado de implantações de sistemas de segurança em diversas empresas de grande porte em Londrina e região, além de atuar como pesquisador de malwares independente. </span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Palestra 7 -->
+                <!-- Palestra 8 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-p8">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/palestras/vitorio.jpg" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">S.O.L.I.D</div>
+                      <span class="mdl-typography--body-1">Princípios de arquitetura e flexibilidade para suas classes.
+                      Aplicação de conceitos S.O.L.I.D e Orientação à Objetos com exemplos em C#</span></div><br/>
+                      <div><span class="mdl-typography--title">Marcelo de Souza </span><br/>
+                      <span class="mdl-typography--caption">Desenvolvedor autodidata há mais de 20 anos, atualmente está como Arquiteto de Aplicações em Unimake Software. </span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Palestra 8 -->
+                
+                <!-- Palestra 9 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-p9">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/palestras/saldanha.jpg" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">Home Office</div>
+                      <span class="mdl-typography--body-1">Os desafios e benefícios do Home Office</span></div><br/>
+                      <div><span class="mdl-typography--title">Raphael Batista Saldanha </span><br/>
+                      <span class="mdl-typography--caption">Mais de 10 anos de experiência em desenvolvimento de software, integração e arquitetura de sistemas. Experiência no projeto e implementação de aplicações web, windows e mobile. Experiência prática em campos variados, como ERP, CRM, B2B e B2C. Atualmente trabalhando como Engenheiro de Software na AllShare B.V., FinTech localizada em Hoofddorp, Holanda. </span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Palestra 9 -->
+
+                <!-- Palestra 10 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-p10">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/palestras/eder.jpg" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">BLZ uma história de empreendedorismo!</div>
+                      <span class="mdl-typography--body-1">A BLZ é uma empresa múltipla que atua em diversos mercados relacionados à Tecnologia da Informação e infra estrutura, fundada no início de 2002 com sede em Campo Mourão, na região Centro-Oeste do Paraná, todos os projetos da BLZ são tratados com todo o empenho, respeito e importância que merecem, e isso faz com que nossa atuação seja sempre ímpar e correta, O zelo em escolher a equipe, em firmar parcerias estratégicas e desenvolver novos negócios tornou a BLZ uma empresa de referencia no sul do Pais.</span></div><br/>
+                      <div><span class="mdl-typography--title">Eder Gonçalves Pereira </span><br/>
+                      <span class="mdl-typography--caption">Empresário e pesquisador, formado em Ciências Contábeis e Diretor da BLZ, atua no mercado de Internet desde 1999, sempre buscando uma solução viável e competitiva, desenvolvendo métodos e produtos para facilitar a gestão de provedores e empresas de telecomunicações, com um trabalho voltado para redução de custos e melhoria da qualidade, todos os projetos são elaborados com foco na facilidade de implantação!</span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Palestra 10 -->
+
+                <!-- Fim Palestras -->
+
+                <!-- Minicursos -->
+                <!-- Minicurso 1 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m1">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/frank.jpg" class=" mdl-dialog-card-image"/>
+                    <img src="images/minicursos/radames.jpg" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">Arduino</div>
+                      <span class="mdl-typography--body-1">Conceitos básicos sobre Arduino, sensores, atuadores e desenvolvimentos de projetos.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Frank Helbert e Radames Juliano Halmeman</span><br/>
+                      <span class="mdl-typography--caption">Prof. Dr. Frank Helbert Borsato 
+                        Graduado em Ciência da Computação (UEM) 
+                        Mestre em Ciência da Computação (UEM) 
+                        Doutor em Ciências - Ciência da Computação (USP) 
+                        Professor de Lógica Matemática, Arquitetura e Organização de Computadores e Sistemas Operacionais.
+                        <br>Prof. Dr. Radames Juliano Halmeman 
+                        Graduado em Processamento de dados (UEM) 
+                        Mestrado em Informática (UFPR) 
+                        Doutorado em Energia na Agricultura - Agronomia (Unesp) 
+                        Professor de linguagens de programação (Java) e Computação Física.</span></div>
+                                            </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 1 -->
+
+                <!-- Minicurso 2 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m2">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/rag.jpeg" class=" mdl-dialog-card-image"/>
+                      <div class="mdl-typography--display-1">Computação Paralela e Cuda</div>
+                      <span class="mdl-typography--body-1">O objetivo desse minicurso é apresentar uma introdução à Computação Paralela com Sistemas Heterogêneos. A utilização de placas gráficas (GPUs) como dispositivos aceleradores de execução. Serão apresentados o modelo de programação e de memória, o modelo execução de aplicações utilizando GPUs, criação e lançamento da execução de kernels em GPUs. A ideia é que seja um minicurso bem prático e que os participantes possam sair como uma visão geral sobre o assunto.</span>
+                    </div>
+                    <br/>
+                    <div><span class="mdl-typography--title">por Rogério Aparecido</span><br/>
+                      <span class="mdl-typography--caption">Professor na Universidade Tecnológica Federal do Paraná (UTFPR), campus Campo Mourão desde 2009. É Bacharel em Informática (2006) e Mestre em Ciência da Computação (2008) pela Universidade Estadual de Maringá (UEM). Tem Doutorado em Ciência da Computação (2016) pela Universidade de São Paulo (USP) na área de Computação Paralela. Tem experiência em Ciência da Computação, tendo como principais linhas de pesquisa e interesses: Arquitetura de Computadores, Computação Paralela, Computação Heterogênea e Offloading de Código.</span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 2 -->
+
+                <!-- Minicurso 3 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m3">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/vitorio.jpg" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Use EMACS! Vi é mau</div>
+                        <span class="mdl-typography--body-1">Utilizado por grandes nomes como Linus, Stallman, Matz e muitos outros, venha e aprenda a utilizar um dos editores de texto mais debatidos de todos os tempos e a estimular o seu dedo mínimo.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Vitório Miguel</span><br/>
+                         <span class="mdl-typography--caption">Estudante de Ciência da Computação.</span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 3 -->
+
+                <!-- Minicurso 4 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m4">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/bruno.jpg" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Aplicações Web com Flask</div>
+                        <span class="mdl-typography--body-1">Flask é um microframework Python, ideal para construir aplicações web sem complicações. Neste minicurso além de uma introdução ao Flask e suas dependências, serão construídas 3 aplicações web: Uma aplicação que busca informações públicas do Github, uma simples API e um Microblogging.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Bruno Mendes</span><br/>
+                         <span class="mdl-typography--caption">Estudante do curso de Bacharelado em Ciência da Computação na UTFPR-CM. Contribuidor casual de software livre. Adepto de tecnologias que poupam tempo do desenvolvedor e atualmente trabalhando na área de gamificação.</span></div>   
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 4 -->
+
+                <!-- Minicurso 5 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m5">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/palestras/fabio.png" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Desenvolvimento de aplicativos móveis híbridos multi-plataformas</div>
+                        <span class="mdl-typography--body-1">O desenvolvimento de aplicativos móveis não é novidade e está bem difundido no contexto da tecnologia da informação, o desafio do momento é como desenvolver aplicativos móveis para diferentes plataformas de forma rápida e eficiente. Este minicurso tem como objetivo fazer uma introdução e praticar as tecnologias necessárias para o desenvolvimento de aplicativos para diferentes plataformas, como Android e iOS, utilizando HTML, CSS e JavaScript.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Fábio Rogégio SJ</span><br/>
+                         <span class="mdl-typography--caption">Fábio Rogério da Silva José, conhecido como Fábio Rogério SJ nas redes sociais, é desenvolvedor de aplicações web e mobile desde quando o Internet Explorer 7 era um pesadelo e desenvolver aplicativos híbridos com tecnologias web era um trabalho árduo, ou seja, desde 2007. Atualmente Fábio Rogério trabalha como desenvolvedor e pesquisador na empresa TecnoSpeed e presta serviço de consultoria e treinamento em desenvolvimento de aplicações web e mobile utilizando tecnologias híbridas. Fábio também é professor, de curso superior, onde ministra as disciplinas de desenvolvimento frontend, desenvolvimento de aplicativos móveis, web design, design de interação e lógica de programação.</span></div>    
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 5 -->
+
+                <!-- Minicurso 6 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m6">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/campiolo.png" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Introdução ao LaTex</div>
+                        <span class="mdl-typography--body-1">O Latex é um sistema para elaboração de documentos de alta qualidade tipográfica. Possibilita o processamento  avançado de texto  e a formatação segundo uma estrutura bem definida. Por isso, é muito utilizado para a elaboração de documentos que exigem rigor na formatação, como livros, artigos e monografias. Neste curso será apresentada uma visão geral sobre o sistemas Latex,  de suas principais ferramentas e da manipulação básica de documentos, como estruturação e formatação de textos, figuras, tabelas e fórmulas matemáticas.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Rodrigo Campiolo</span><br/>
+                         <span class="mdl-typography--caption">Possui graduação em Ciência da Computação pela Universidade Estadual de Maringá (2002), mestrado em Ciência da Computação pela Universidade Federal de Santa Catarina (2005) e doutorado em Ciência da Computação pela Universidade de São Paulo (2016). Atua como professor em cursos na área de Informática desde 2005. Já ministrou curso de Latex em 2010 na Universidade de Rio Verde-GO.</span></div>    
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 6 -->
+
+                <!-- Minicurso 7 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m7">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/mairieli.jpg" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Minerando Repositórios de Código</div>
+                        <span class="mdl-typography--body-1">Mineração de Repositórios de Software é uma área voltada para análise dos dados que são gerados durante o desenvolvimento de software. Esses dados podem ser transformados em informações úteis para ajudar desenvolvedores a tomarem decisões no dia a dia. Neste minicurso, utilizaremos o RepoDriller, um Framework Java que auxilia a analise de repositórios e também o GHTorrent, um serviço que fornece os dados da API do Github de forma offline. Dada a simplicidade do RepoDriller, com poucas linhas de código será possível extrair e analisar uma grande quantidade informações de um repositório. <b>Requisitos:</b> Esse minicurso tem atividades práticas. Se decidir usar seu próprio notebook será necessário ter Eclipse ou Netbeans instalado.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Mairieli Wessel</span><br/>
+                         <span class="mdl-typography--caption">Estudante do curso de Bacharelado em Ciência da Computação na UTFPR-CM. Apaixonada por Engenharia de Software e atualmente trabalhando na área de recomendação de mudanças.</span></div>    
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 7 -->
+
+                <!-- Minicurso 8 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m8">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/douglas.jpg" class=" mdl-dialog-card-image"/>
+                    <img src="images/minicursos/edvaldo.jpeg" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Introdução ao desenvolvimento de aplicações full-stack com JavaScript</div>
+                        <span class="mdl-typography--body-1">De carrasco à uma das linguagens mais aclamadas da atualidade, descubra porque você deve considerar o JavaScript para o desenvolvimento do seu próximo projeto. Do back-end em Node.js, ao front-end com React.js e mobile com React Native, aprenda a criar soluções completas e robustas com JavaScript.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Douglas Nassif e Edvaldo Szymonek</span><br/>
+                         <span class="mdl-typography--caption">Douglas é desenvolvedor full-stack, apaixonado por tecnologia e viciado em GitHub, considera o processo de criação de software uma das atividades mais importantes já existente.<br/><br/> Edvaldo é desenvolvedor full-stack, utiliza JavaScript e suas tecnologias, trabalha atualmente com NodeJS no back-end, React e React Native no front-end. Formado em Análise e Desenvolvimento de Sistema, sempre antenado em novas tecnologias, contribui sempre que pode com a comunidade open source e ama sorvete :)</span></div>    
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 8 -->
+
+                <!-- Minicurso 9 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m9">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/henrique.jpg" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Introdução ao de desenvolvimento de aplicações web com Ruby on Rails</div>
+                        <span class="mdl-typography--body-1">Nesse curso vamos ter uma visão geral da linguagem Ruby e do framework web Ruby on Rails. Você irá criar a sua aplicação e durante o processo aprender o fundamental da linguagem Ruby e também sobre as facilidades e peculiaridades do fluxo de  trabalho com Rails. Veremos também como criar testes e como integrar gems (bibliotecas) da comunidade no seu projeto em Rails!</span></div><br/>
+                    <div><span class="mdl-typography--title">por Henrique Pinheiro</span><br/>
+                         <span class="mdl-typography--caption">Henrique Sousa Pinheiro, estuda Ciências da Computação na UTFPR-CM.</span></div>    
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 9 -->
+
+                <!-- Minicurso 10 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m10">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/monteverde.jpg" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Análise de Vulnerabilidades Web</div>
+                        <span class="mdl-typography--body-1">Apresentação das principais vulnerabildiades Web, bem como a exploração de cada vulnerabilidade, com exercícios práticos de invasão a servidores Web utilizando vulnerabilidades apresentadas e existentes em aplicações exemplo.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Wagner Aparecido Monteverde</span><br/>
+                         <span class="mdl-typography--caption">Mestrando em Informática na UTFPR Cornélio Procópio, Gerente de projetos no Grupo de trabalho Early Warning System da Rede Nacional de Pesquisa - RNP, Gerente de Projetos do Grupo de trabalho Big Data Intelligence Security  da Rede Nacional de Pesquisa - RNP.  Líder da Startup de Segurança Cybersecurity++.</span></div>    
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 10 -->
+
+                <!-- Minicurso 11 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m11">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/joao2.jpg" class=" mdl-dialog-card-image"/>
+                    <img src="images/minicursos/luiz.png" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Introdução ao Linux</div>
+                        <span class="mdl-typography--body-1">Curso focado para iniciantes em computação, onde será ensinado conceitos do Sistema Operacional Linux, bem como conceito de interfaces gráficas, terminal, principais comandos do terminal e criação de scripts em Shell.</span></div><br/>
+                        
+                    <div><span class="mdl-typography--title">por João Martins e Luiz Arthur</span><br/>
+                         <span class="mdl-typography--caption">João: Estudante de Bacharelado em Ciência da Computação UTFPR - CM. Estudioso de linguagens de programação e Software Livre e atualmente trabalhando com Programação Paralela em dispositivos aceleradores (GPUs).
+                         <br>
+                         Luiz: Professor da UTFPR com doutorado em Ciência da Computação e certificado LPI (Linux Professional Institute).
+                         </span></div>    
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 11 -->
+
+                <!-- Minicurso 12 -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-m12">
+                  <div class="mdl-dialog__content">
+                    <div><img src="images/minicursos/marcos.jpg" class=" mdl-dialog-card-image"/>
+                        <div class="mdl-typography--display-1">Programação de Jogos com JavaScript</div>
+                        <span class="mdl-typography--body-1">Apresentando uma introdução ao desenvolvimento de jogos por meio da construção de um jogo simples utilizando o framework Phaser.</span></div><br/>
+                    <div><span class="mdl-typography--title">por Marcos Silvano</span><br/>
+                         <span class="mdl-typography--caption">Professor da UTFPR com doutorado em Ciência da Computação. Possui experiência e atua principalmente nos seguintes temas: Aplicativos Móveis, Engenharia de Software e Desenvolvimento de Jogos.</span></div>    
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Minicurso 12 -->
+
+                <!-- Fim Minicursos -->
+
+                <!-- Confraternizacao -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-con">
+                  <div class="mdl-dialog__content">
+                    <div>
+                      <div class="mdl-typography--display-1">Evento de Confraternização</div>
+                      <span class="mdl-typography--body-1">Texto aqui.</span></div><br/>
+                    <div><span class="mdl-typography--title">Descrição das atividades</span><br/>
+                      <span class="mdl-typography--caption">Texto aqui.</span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Confraternizacao -->
+
+                <!-- Lightning -->
+                <dialog class="mdl-dialog mdl-dialog-card" id="modal-lig">
+                  <div class="mdl-dialog__content">
+                    <div>
+                      <div class="mdl-typography--display-1">Lightning Talk</div>
+                      <span class="mdl-typography--body-1">Uma lightning talk é uma apresentação curta dada em uma conferência ou fórum similar. Ao contrário de outras apresentações, palestras relâmpagos duram poucos minutos. E durante um curto intervalo de tempo são apresentadas várias lightning talks por diversos oradores.</span></div>
+                    <div><span class="mdl-typography--title"></span>
+                      <span class="mdl-typography--caption"></span></div>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button">Fechar</button>
+                    </div>
+                </dialog>
+                <!-- Fim Lightning -->
+
+                <!-- Fim Modals -->
+
+                <!-- Rodape -->
+                <footer class="zora-footer mdl-mega-footer">
+                    <div class="mdl-mega-footer--right-section">
+                        <a class="mdl-typography--font-light" href="#top">
+                            Ir para o topo
+                            <i class="material-icons">expand_less</i>
+                        </a>
+                    </div>
+                    <div class="realizacao">
+                        <div>Realização:</div>
+                        <a class="logoUtf" href="http://utfpr.edu.br/" target="_blank"></a>
+                        <a class="logoCacic" href="https://www.facebook.com/caciccm/" target="_blank"></a>
+                    </div>
+                </footer>
+                <!-- Fim Rodape -->
+            </div>
+            <!-- Fim Conteudo -->
+        </div>
+        <!-- Fim Pagina -->
+        <!-- Scripts -->
+        <!-- Palestra 1 -->
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <!-- Fim Palestra 1 -->
+        <!-- Fim Scripts -->
+    </body>
+</html>
