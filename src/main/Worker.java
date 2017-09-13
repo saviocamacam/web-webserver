@@ -75,7 +75,7 @@ public class Worker implements Runnable{
 			Main.log("Arquivos: " + folderFiles.length);
 			
 			if(folderFiles != null)
-				return reponse200(folderFiles[0]);
+				return reponse200();
 		}
 		return reponse404();
 	}
@@ -119,12 +119,14 @@ public class Worker implements Runnable{
 
 			BufferedReader br = new BufferedReader(new InputStreamReader(input));
 			String s = br.readLine();
+			
 			// Decode HTTP-METHOD
 			String ss[] = s.split(" ");
 			this.headerHttpMethod = ss[0];
 			this.headerPath = ss[1];
 			if(ss.length > 2)
 				this.headerMessage = ss[2];
+			
 			// Decode HTTP-HEADER PARAMS
 			while(!(s=br.readLine()).isEmpty()){
 				System.out.println(s);
