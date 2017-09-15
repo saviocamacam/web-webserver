@@ -15,9 +15,10 @@ public class ServerManager {
 	public void runServer() {
 		try {
 			this.serverSocket = new ServerSocket(port);
+			
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-
 }
