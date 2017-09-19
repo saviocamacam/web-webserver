@@ -11,7 +11,7 @@ public class Main {
 		
 		int port = 8081; 
 		String rootPath = Paths.get("").toAbsolutePath().toString();
-        String subPath = "/dir/public_html"; 
+        String subPath = "/dir/public_html";
 
         
 
