@@ -16,7 +16,8 @@ public class Main {
         
 
         while (true) {
-        	ServerSocket serverSocket = new ServerSocket(port); 
+        	ServerSocket serverSocket = new ServerSocket(port);
+        	System.out.println("Servidor iniciado");
             Socket socket = serverSocket.accept();
 
             new Thread(new Worker(socket, rootPath + subPath)).run();
